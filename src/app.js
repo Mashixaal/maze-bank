@@ -18,14 +18,29 @@
   
 //   document.body.appendChild(component());
 
-console.log("script ok");
+// console.log("script ok");
 
-let button = document.getElementById("dark-mode");
-let body = document.querySelector("body");
+// let button = document.getElementById("dark-mode");
+// let body = document.querySelector("body");
 
-function darkMode() {
-   body.classList.toggle("bg-black");
-   body.classList.toggle("text-white");
+// function darkMode() {
+//    body.classList.toggle("bg-black");
+//    body.classList.toggle("text-white");
+// }
+
+// button.addEventListener("click", darkMode);
+
+const accountNumber = document.getElementById("account-number");
+const btn = document.getElementById("submit-number");
+const resultAccount = document.getElementById("result-account");
+
+let currAccount = 0;
+
+const submit = () => {
+   let results = parseInt(accountNumber.value);
+   let total = (currAccount += results);
+   resultAccount.innerHTML = total;
+   return total;
 }
 
-button.addEventListener("click", darkMode);
+submit();
