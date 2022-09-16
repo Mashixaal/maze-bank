@@ -42,5 +42,5 @@ const submit = () => {
    resultAccount.innerHTML = total;
    return total;
 }
-
+console.log(submit);
 submit();

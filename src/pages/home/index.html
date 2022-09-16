@@ -7,20 +7,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Started</title>
   </head>
-  <body class="bg-customYellow-yellowlight">
+  <body class="bg-orange-400 font-mono">
     <!----------------------------- Maze-Bank dev---------------------------------------->
-    <div id="root"></div>
-      <button type="button" id="switch">Dark Mode</button>
-      <h1>Hello World !!</h1>
-      <form>
+    <h1 class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl">Bienvenue chez MazeBank</h1>
+    <div class="flex justify-center">
+      <table class="border-separate border-spacing-3 border border-slate-500 ">
+        <thead>
+          <tr>
+            <th class="border border-slate-600 ...">Numero de compte</th>
+            <th class="border border-slate-600 ...">258698566912</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-slate-700 ...">Iban</td>
+            <td class="border border-slate-700 ...">FR14 2004 1010 0505 0001 3M02 606</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ...">Code banque</td>
+            <td class="border border-slate-700 ...">86457</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ...">Code guichet</td>
+            <td class="border border-slate-700 ...">30546</td>
+          </tr>
+          <tr>
+            <td class="border border-slate-700 ...">Clé du RIB</td>
+            <td class="border border-slate-700 ...">34</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="flex justify-center">
+      <form class="p-5">
         <label for=""></label>
         <label for="account-number">Numéro de compte</label>
-      <input id="account-number" class="border-2 border-red-600" type="number" />
-      <button id="submit-number" type="button">envoyer</button>
-    </form>
-    <div class="mt-10">
+        <input
+        id="account-number"
+        class="border-2 border-red-600"
+        type="number"
+        />
+        <button id="submit-number" type="button">envoyer</button>
+      </form>
+      <!-- <div class="p-5">
       <h2>List user</h2>
       <p>Your account number is : <span id="results-account"></span></p>
-    </div>
+    <a href=""></a> -->
   </body>
 </html>
