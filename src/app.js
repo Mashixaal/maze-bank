@@ -40,7 +40,7 @@ const submit = () => {
    let results = parseInt(accountNumber.value);
    let total = (currAccount += results);
    resultAccount.innerHTML = total;
+   console.log(total);
    return total;
 }
-console.log(submit);
-submit();
+// submit();
