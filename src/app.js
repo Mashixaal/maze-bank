@@ -33,14 +33,16 @@
 const accountNumber = document.getElementById("account-number");
 const btn = document.getElementById("submit-number");
 const resultAccount = document.getElementById("result-account");
+const sold = document.getElementById("solde");
 
-let currAccount = 0;
+let solde = 0;
 
 const submit = () => {
    let results = parseInt(accountNumber.value);
-   let total = (currAccount += results);
-   resultAccount.innerHTML = total;
-   console.log(total);
-   return total;
+   let total = (solde += results);
+   sold.textContent = total;
+   // return total;
 }
-submit();
+console.log(accountNumber);
+
+btn.addEventListener("click", submit);
