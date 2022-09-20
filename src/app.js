@@ -43,4 +43,4 @@ const submit = () => {
    console.log(total);
    return total;
 }
-// submit();
+submit();
