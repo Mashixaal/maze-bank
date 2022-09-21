@@ -30,30 +30,32 @@
 
 // button.addEventListener("click", darkMode);
 
-const accountNumber = document.getElementById("account-number");
+const accountNumber = document.getElementById("input-deposite");
 const btn = document.getElementById("submit-number");
 const resultAccount = document.getElementById("result-account");
 const sold = document.getElementById("solde");
+const withdrawSold2 = document.getElementById("input-widhtdraw")
+const button = document.getElementById("submit-number2")
 
 let solde = 0;
 
 const submit = () => {
    let results = parseInt(accountNumber.value);
    let total = (solde += results);
-   sold.textContent = total;
-   // return total;
+   sold.textContent = total; 
 }
 console.log(accountNumber);
 
 btn.addEventListener("click", submit);
+button.addEventListener("click", withdrawSold);
 
-buttonDepo.addEventListener("click", addSold);
   
 const withdrawSold = () => {
-  let value = parseInt(withdrawCash.value);
-  let total = (currentSold -= value);
-  resultsSold.innerHTML = total;
-  return total;
+  let value = parseInt(withdrawSold2.value)
+  console.log(value);
+  total = (solde -= value);
+  console.log(total);
+  sold.textContent = total;
 };
 
-buttonWithdraw.addEventListener("click", withdrawSold);
+
