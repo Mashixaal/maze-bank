@@ -46,3 +46,14 @@ const submit = () => {
 console.log(accountNumber);
 
 btn.addEventListener("click", submit);
+
+buttonDepo.addEventListener("click", addSold);
+  
+const withdrawSold = () => {
+  let value = parseInt(withdrawCash.value);
+  let total = (currentSold -= value);
+  resultsSold.innerHTML = total;
+  return total;
+};
+
+buttonWithdraw.addEventListener("click", withdrawSold);
