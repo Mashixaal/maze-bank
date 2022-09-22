@@ -4,7 +4,7 @@
 
 // function component() {
 //     const element = document.createElement('div');
-  
+
 //     // Lodash, currently included via a script, is required for this line to work
 //     element.innerHTML = _.join(['Hello', 'webpack'], ' ');
 //     element.classList.add('hello');
@@ -15,7 +15,7 @@
 //   element.appendChild(myIcon);
 //     return element;
 //   }
-  
+
 //   document.body.appendChild(component());
 
 // console.log("script ok");
@@ -34,28 +34,26 @@ const accountNumber = document.getElementById("input-deposite");
 const btn = document.getElementById("submit-number");
 const resultAccount = document.getElementById("result-account");
 const sold = document.getElementById("solde");
-const withdrawSold2 = document.getElementById("input-widhtdraw")
-const button = document.getElementById("submit-number2")
+const withdrawSold2 = document.getElementById("input-withdraw");
+const button = document.getElementById("submit-number2");
 
 let solde = 0;
 
 const submit = () => {
-   let results = parseInt(accountNumber.value);
-   let total = (solde += results);
-   sold.textContent = total; 
-}
-console.log(accountNumber);
-
-btn.addEventListener("click", submit);
-button.addEventListener("click", withdrawSold);
-
-  
-const withdrawSold = () => {
-  let value = parseInt(withdrawSold2.value)
-  console.log(value);
-  total = (solde -= value);
-  console.log(total);
+  let results = parseInt(accountNumber.value);
+  let total = (solde += results);
   sold.textContent = total;
 };
 
+btn.addEventListener("click", submit);
 
+const withdrawSold = () => {
+  let value = parseInt(withdrawSold2.value);
+  let total = (solde -= value);
+  sold.innerHTML = total;
+};
+
+button.addEventListener("click", withdrawSold);
+withdrawSold2.addEventListener("keydown", (key) => {
+  console.log(key);
+});
