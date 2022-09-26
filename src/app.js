@@ -2,7 +2,7 @@
 // import './style.css';
 // import Icon from './icon.png/opti.png';
 import "@fortawesome/fontawesome-free/js/all";
-
+import showDate from './components/dailyDate';
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 // ..

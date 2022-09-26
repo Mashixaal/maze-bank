@@ -19,6 +19,7 @@
     data-aos-once="false"
     data-aos-anchor-placement="top-center"
   >
+    <!--------------------------------- header ------------------------------------->
     <header
       class="grid grid-cols-3 h-20 bg-customBlue-blue"
       data-aos="fade-in"
@@ -44,9 +45,7 @@
       >
         <b> Bienvenue chez MazeBank</b>
       </h1>
-      <div class="flex flex-row-reverse mt-2 m-2">
-        <i class="fa-solid fa-bars" width="100px" height="auto"></i>
-      </div>
+      <div class="flex flex-row-reverse mt-2 m-2" id="day-date"></div>
     </header>
     <section>
       <div class="mt-20">
@@ -130,36 +129,46 @@
             </tbody>
           </table>
         </div>
-          <form class="flex justify-center p-5">
-            <label for=""></label>
-            <label for="account-number"></label>
-            <input
-              id="input-deposite"
-              placeholder="Déposer de l'argent"
-              class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
-              type="number"
-            />
-            <button class="border bg-customGreen-green" id="submit-number" type="button">
-              déposer
-            </button>
-          </form>
-          <form class="flex justify-center p-5">
-            <label for="account-number"></label>
-            <input
-              id="input-withdraw"
-              placeholder="Retirer de l'argent"
-              class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
-              type="number"
-            />
-            <button class="border bg-customGreen-green" id="submit-number2" type="button">
-              Retirer
-            </button>
-          </form>
-          <p class="flex justify-center bg-customGreen-green">
-            Votre Solde est : <span id="solde"></span>
-          </p>
+        <form class="flex justify-center p-5">
+          <label for=""></label>
+          <label for="account-number"></label>
+          <input
+            id="input-deposite"
+            placeholder="Déposer de l'argent"
+            class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
+            type="number"
+          />
+          <button
+            class="border bg-customGreen-green"
+            id="submit-number"
+            type="button"
+          >
+            déposer
+          </button>
+        </form>
+        <form class="flex justify-center p-5">
+          <label for="account-number"></label>
+          <input
+            id="input-withdraw"
+            placeholder="Retirer de l'argent"
+            class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
+            type="number"
+          />
+          <button
+            class="border bg-customGreen-green"
+            id="submit-number2"
+            type="button"
+          >
+            Retirer
+          </button>
+        </form>
+        <p class="flex justify-center text-customYellow-yellowlight">
+          Votre Solde est : <span id="solde"></span>
+        </p>
       </div>
     </section>
+
+    
     <!------------------------ footer ----------------------->
     <!-- <footer class="w-full h-full bg-customBlue-blue blur-0">
       <div>
