@@ -11,6 +11,10 @@ module.exports = {
         "yellowlight": "#FFDD00",
         "yellowdark": "#9B8806",
       },
+      customBlue: {
+        "blue": "#B2F8FC",
+      },
+
       red: colors.red,
       gray: colors.gray,
       orange: colors.orange,
