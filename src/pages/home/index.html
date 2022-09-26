@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="../../assets/css/output.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Getting Started</title>
-  </head>
-  <body class="bg-custom1 font-mono">
     <!----------------------------- Branch dev---------------------------------------->
-    <h1
-      class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl"
-    >
-      Bienvenue chez MazeBank
-    </h1>
-    <div class="flex justify-center">
-      <table
+  </head>
+  <body class="font-mono">
+    <section>
+      <div class="bg-maze-bank h-screen bg-cover bg-center">
+        <h1
+        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl"
+        >
+        Bienvenue chez MazeBank
+      </h1>
+      <div class="flex justify-center">
+        <table
         class="border-separate border-customYellow-yellowlight border-spacing-3 border border-slate-500"
-      >
+        >
         <thead>
           <tr>
             <th class="border border-slate-600 ...">Numero de compte</th>
@@ -32,39 +34,39 @@
             </td>
           </tr>
           <tr>
-            <td class="border border-slate-700 ...">Code banque</td>
-            <td class="border border-slate-700 ...">86457</td>
-          </tr>
-          <tr>
-            <td class="border border-slate-700 ...">Code guichet</td>
-            <td class="border border-slate-700 ...">30546</td>
-          </tr>
-          <tr>
-            <td class="border border-slate-700 ...">Clé du RIB</td>
-            <td class="border border-slate-700 ...">34</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="">
-      <form class="flex justify-center p-5">
-        <label for=""></label>
+          <td class="border border-slate-700 ...">Code banque</td>
+          <td class="border border-slate-700 ...">86457</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Code guichet</td>
+          <td class="border border-slate-700 ...">30546</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ...">Clé du RIB</td>
+          <td class="border border-slate-700 ...">34</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="">
+    <form class="flex justify-center p-5">
+      <label for=""></label>
         <label for="account-number">Déposer de l'argent</label>
         <input
-          id="input-deposite"
-          placeholder="Déposer de l'argent"
-          class="border-2 border-customYellow-yellowlight"
-          type="number"
+        id="input-deposite"
+        placeholder="Déposer de l'argent"
+        class="border-2 border-customYellow-yellowlight"
+        type="number"
         />
         <button id="submit-number" type="button">déposer</button>
       </form>
       <form class="flex justify-center p-5">
         <label for="account-number">Retirer de l'argent</label>
         <input
-          id="input-withdraw"
-          placeholder="Retirer de l'argent"
-          class="border-2 border-customYellow-yellowlight"
-          type="number"
+        id="input-withdraw"
+        placeholder="Retirer de l'argent"
+        class="border-2 border-customYellow-yellowlight"
+        type="number"
         />
         <button id="submit-number2" type="button">Retirer</button>
       </form>
@@ -72,5 +74,7 @@
         Votre Solde est : <span id="solde"></span>
       </p>
     </div>
-  </body>
+  </div>
+  </section>
+</body>
 </html>

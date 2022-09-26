@@ -11,15 +11,22 @@ module.exports = {
         "yellowlight": "#FFDD00",
         "yellowdark": "#9B8806",
       },
-      customBlue: {
-        "blue": "#B2F8FC",
-      },
 
+      // customBlue: {
+      //   "blue": "#B2F8FC",
+      // },
+
+      
       red: colors.red,
       gray: colors.gray,
       orange: colors.orange,
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'maze-bank': "url('../img/money.jpg')",
+        'maze-bank2': "url('../img/maze-bank.jpg')",
+      }
+    },
   },
   plugins: [],
 }
