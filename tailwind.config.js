@@ -19,6 +19,10 @@ module.exports = {
       customGreen: {
         "green": "#DFF515",
       },
+
+      customElectric: {
+        "electric": "#16F5C5",
+      },
       
       red: colors.red,
       gray: colors.gray,
