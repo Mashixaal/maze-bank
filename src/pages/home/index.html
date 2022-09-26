@@ -5,11 +5,18 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="../../assets/css/output.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting Started</title>
+    <title>Maze Bank</title>
     <!----------------------------- Branch dev---------------------------------------->
   </head>
   <body
-    class="font-mono bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm"
+    class="font-mono bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm" data-aos="fade-down-right"
+    data-aos-offset="200"
+    data-aos-delay="50"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false"
+    data-aos-anchor-placement="top-center"
   >
     <header
       class="grid grid-cols-3 h-20 bg-customBlue-blue"
@@ -32,44 +39,61 @@
         />
       </div>
       <h1
-        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-10"
+        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-5"
       >
         <b> Bienvenue chez MazeBank</b>
       </h1>
-      <div>
-        <i class="fa-solid fa-bars"></i>
+      <div class="flex flex-row-reverse mt-2 m-2">
+        <i class="fa-solid fa-bars" width="100px" height="auto"></i>
       </div>
     </header>
     <section>
       <div class="mt-20">
-        <div class="flex justify-center">
+        <div class="flex justify-center font-normal" data-aos="flip-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
           <table
             class="border-separate border-customYellow-yellowlight border-spacing-3 border border-slate-500"
           >
             <thead>
               <tr>
-                <th class="border border-slate-600 ...">Numero de compte</th>
-                <th class="border border-slate-600 ...">258698566912</th>
+                <th class="border border-slate-600 ... bg-customGreen-green">
+                  Numero de compte
+                </th>
+                <th class="border border-slate-600 ... bg-customGreen-green">
+                  258698566912
+                </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="border border-slate-700 ...">Iban</td>
-                <td class="border border-slate-700 ...">
+                <td class="border border-slate-700 ... bg-customGreen-green">Iban</td>
+                <td class="border border-slate-700 ... bg-customGreen-green">
                   FR14 2004 1010 0505 0001 3M02 606
                 </td>
               </tr>
               <tr>
-                <td class="border border-slate-700 ...">Code banque</td>
-                <td class="border border-slate-700 ...">86457</td>
+                <td class="border border-slate-700 ... bg-customGreen-green">
+                  Code banque
+                </td>
+                <td class="border border-slate-700 ... bg-customGreen-green">86457</td>
               </tr>
               <tr>
-                <td class="border border-slate-700 ...">Code guichet</td>
-                <td class="border border-slate-700 ...">30546</td>
+                <td class="border border-slate-700 ... bg-customGreen-green">
+                  Code guichet
+                </td>
+                <td class="border border-slate-700 ... bg-customGreen-green">30546</td>
               </tr>
               <tr>
-                <td class="border border-slate-700 ...">Clé du RIB</td>
-                <td class="border border-slate-700 ...">34</td>
+                <td class="border border-slate-700 ... bg-customGreen-green">
+                  Clé du RIB
+                </td>
+                <td class="border border-slate-700 ... bg-customGreen-green">34</td>
               </tr>
             </tbody>
           </table>
@@ -77,32 +101,40 @@
         <div class="">
           <form class="flex justify-center p-5">
             <label for=""></label>
-            <label for="account-number">Déposer de l'argent</label>
+            <label for="account-number"></label>
             <input
               id="input-deposite"
               placeholder="Déposer de l'argent"
-              class="border-2 border-customYellow-yellowlight"
+              class="border-2 border-customYellow-yellowlight bg-orange-300 mr-2"
               type="number"
             />
-            <button id="submit-number" type="button">déposer</button>
+            <button class="border bg-custom1" id="submit-number" type="button">
+              déposer
+            </button>
           </form>
           <form class="flex justify-center p-5">
-            <label for="account-number">Retirer de l'argent</label>
+            <label for="account-number"></label>
             <input
               id="input-withdraw"
               placeholder="Retirer de l'argent"
-              class="border-2 border-customYellow-yellowlight"
+              class="border-2 border-customYellow-yellowlight bg-orange-300 mr-2"
               type="number"
             />
-            <button id="submit-number2" type="button">Retirer</button>
+            <button class="border bg-custom1" id="submit-number2" type="button">
+              Retirer
+            </button>
           </form>
-          <p class="flex justify-center">
+          <p class="flex justify-center bg-customGreen-green">
             Votre Solde est : <span id="solde"></span>
           </p>
         </div>
       </div>
     </section>
     <!------------------------ footer ----------------------->
-    <footer class="bg-gray-600"></footer>
+    <!-- <footer class="w-full h-full bg-customBlue-blue blur-0">
+      <div>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </footer> -->
   </body>
 </html>
