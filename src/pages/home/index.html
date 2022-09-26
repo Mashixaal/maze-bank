@@ -8,88 +8,101 @@
     <title>Getting Started</title>
     <!----------------------------- Branch dev---------------------------------------->
   </head>
-  <body class="font-mono bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm">
-    <header class="grid grid-cols-3 h-20">
+  <body
+    class="font-mono bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm"
+  >
+    <header
+      class="grid grid-cols-3 h-20 bg-customBlue-blue"
+      data-aos="fade-in"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
       <div class="pl-4 mt-2">
         <img
-            src="../../assets/img/logo-png.png"
-            alt="profil"
-            height="auto"
-            width="10%"
-            class="rounded-full"
-            />
+          src="../../assets/img/logo-png.png"
+          alt="profil"
+          height="auto"
+          width="10%"
+          class="rounded-full"
+        />
+      </div>
+      <h1
+        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-10"
+      >
+        <b> Bienvenue chez MazeBank</b>
+      </h1>
+      <div>
+        <i class="fa-solid fa-bars"></i>
       </div>
     </header>
     <section>
-      <div class="">
-        <h1
-        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl"
-        >
-        Bienvenue chez MazeBank
-      </h1>
-      <div class="flex justify-center">
-        <table
-        class="border-separate border-customYellow-yellowlight border-spacing-3 border border-slate-500"
-        >
-        <thead>
-          <tr>
-            <th class="border border-slate-600 ...">Numero de compte</th>
-            <th class="border border-slate-600 ...">258698566912</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="border border-slate-700 ...">Iban</td>
-            <td class="border border-slate-700 ...">
-              FR14 2004 1010 0505 0001 3M02 606
-            </td>
-          </tr>
-          <tr>
-          <td class="border border-slate-700 ...">Code banque</td>
-          <td class="border border-slate-700 ...">86457</td>
-        </tr>
-        <tr>
-          <td class="border border-slate-700 ...">Code guichet</td>
-          <td class="border border-slate-700 ...">30546</td>
-        </tr>
-        <tr>
-          <td class="border border-slate-700 ...">Clé du RIB</td>
-          <td class="border border-slate-700 ...">34</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="">
-    <form class="flex justify-center p-5">
-      <label for=""></label>
-        <label for="account-number">Déposer de l'argent</label>
-        <input
-        id="input-deposite"
-        placeholder="Déposer de l'argent"
-        class="border-2 border-customYellow-yellowlight"
-        type="number"
-        />
-        <button id="submit-number" type="button">déposer</button>
-      </form>
-      <form class="flex justify-center p-5">
-        <label for="account-number">Retirer de l'argent</label>
-        <input
-        id="input-withdraw"
-        placeholder="Retirer de l'argent"
-        class="border-2 border-customYellow-yellowlight"
-        type="number"
-        />
-        <button id="submit-number2" type="button">Retirer</button>
-      </form>
-      <p class="flex justify-center">
-        Votre Solde est : <span id="solde"></span>
-      </p>
-    </div>
-  </div>
-  </section>
-  <!------------------------ footer ----------------------->
-  <footer class="bg-gray-600">
-
-  </footer>
-</body>
+      <div class="mt-20">
+        <div class="flex justify-center">
+          <table
+            class="border-separate border-customYellow-yellowlight border-spacing-3 border border-slate-500"
+          >
+            <thead>
+              <tr>
+                <th class="border border-slate-600 ...">Numero de compte</th>
+                <th class="border border-slate-600 ...">258698566912</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-slate-700 ...">Iban</td>
+                <td class="border border-slate-700 ...">
+                  FR14 2004 1010 0505 0001 3M02 606
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-slate-700 ...">Code banque</td>
+                <td class="border border-slate-700 ...">86457</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-700 ...">Code guichet</td>
+                <td class="border border-slate-700 ...">30546</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-700 ...">Clé du RIB</td>
+                <td class="border border-slate-700 ...">34</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="">
+          <form class="flex justify-center p-5">
+            <label for=""></label>
+            <label for="account-number">Déposer de l'argent</label>
+            <input
+              id="input-deposite"
+              placeholder="Déposer de l'argent"
+              class="border-2 border-customYellow-yellowlight"
+              type="number"
+            />
+            <button id="submit-number" type="button">déposer</button>
+          </form>
+          <form class="flex justify-center p-5">
+            <label for="account-number">Retirer de l'argent</label>
+            <input
+              id="input-withdraw"
+              placeholder="Retirer de l'argent"
+              class="border-2 border-customYellow-yellowlight"
+              type="number"
+            />
+            <button id="submit-number2" type="button">Retirer</button>
+          </form>
+          <p class="flex justify-center">
+            Votre Solde est : <span id="solde"></span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!------------------------ footer ----------------------->
+    <footer class="bg-gray-600"></footer>
+  </body>
 </html>

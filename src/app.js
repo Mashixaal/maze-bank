@@ -1,6 +1,12 @@
 // import _ from 'lodash';
 // import './style.css';
 // import Icon from './icon.png/opti.png';
+import "@fortawesome/fontawesome-free/js/all";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 
 // function component() {
 //     const element = document.createElement('div');
