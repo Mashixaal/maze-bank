@@ -20,6 +20,10 @@ module.exports = {
         "green": "#DFF515",
       },
 
+      customGreenNormal: {
+        "greennormal": "#3FFD00",
+      },
+
       customElectric: {
         "electric": "#16F5C5",
       },

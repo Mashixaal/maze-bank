@@ -9,7 +9,7 @@
     <!----------------------------- Branch dev---------------------------------------->
   </head>
   <body
-    class="font-mono bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm"
+    class="font-thin bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm "
     data-aos="fade-down-right"
     data-aos-offset="200"
     data-aos-delay="50"
@@ -41,79 +41,61 @@
         />
       </div>
       <h1
-        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-5"
+        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-5 font-bold"
       >
-        <b> Bienvenue chez MazeBank</b>
+         Bienvenue chez MazeBank
       </h1>
-      <div class="flex flex-row-reverse mt-2 m-2 pt-4" id="day-date"></div>
+      <div class="flex flex-row-reverse mt-2 m-2 pt-4 font-semibold" id="day-date"></div>
     </header>
 
-    <section>
+    <section class="shadow-2xl">
       
-      <div class="grid grid-cols-2 mt-20">
-        <div class="flex justify-center mt-10"> 
-          <table
-          class=" border-separate border-b-orange-500 border-t-orange-500 border-r-orange-500 border-l-orange-500 border-spacing-3 border border-slate-500 bg-red-400"
-        >
-          <thead>
-            <tr>
-              <th
-                class="border border-slate-600 ... bg-customElectric-electric"
-              >
-                Votre Nom et Prénom
-              </th>
+      <div class="grid grid-cols-2 mt-20 ">
+        <div class="flex flex-col justify-center mt-10 ">
+
+          <span class="justify-center border-x-4 border-x-gray-600 border-t-4 border-t-gray-600 border-b-4 border-b-gray-600 space-y-4">
+
+            <input id="input-name"
+            placeholder="Votre nome et prenom"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-compte"
+            placeholder="Votre numero de compte"
+            type="text"
+            class="flex justify-end">
             
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td
-                class="border border-slate-700 ... bg-customElectric-electric"
-              >
-              votre 
-              </td>
-           
-            </tr>
-            <tr>
-              <td
-                class="border border-slate-700 ... bg-customElectric-electric"
-              >
-               votre iban
-              </td>
-             
-            </tr>
-            <tr>
-              <td
-                class="border border-slate-700 ... bg-customElectric-electric"
-              >
-               votre Code banque
-              </td>
-             
-            </tr>
-            <tr>
-              <td
-                class="border border-slate-700 ... bg-customElectric-electric"
-              >
-               votre Clé du RIB
-              </td>
-             
-            </tr>
-          </tr>
-          <tr>
-            <td
-              class="border border-slate-700 ... bg-customElectric-electric"
-            >
-             votre BIC
-            </td>
-          <tr>
-            <td
-              class="border border-slate-700 ... bg-customElectric-electric"
-            >
-             Votre solde
-            </td>
-          </tr>
-          </tbody>
-        </table>
+            <input id="input-iban"
+            placeholder="Votre iban"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-banque"
+            placeholder="Votre code banque"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-guichet"
+            placeholder="Votre code guichet"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-rib"
+            placeholder="Votre clé du RIB"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-bic"
+            placeholder="Votre BIC"
+            type="text"
+            class="flex justify-end">
+
+            <input id="input-solde"
+            placeholder="Votre solde"
+            type="text"
+            class="">
+          </span>
+          <button id="button-valider1" class="flex justify-center font-bold">Valider</button>
         </div>
         <div
           class="flex justify-center font-normal"
@@ -127,7 +109,7 @@
           data-aos-anchor-placement="top-center"
         >
           <table
-            class="border-separate border-b-orange-500 border-t-orange-500 border-r-orange-500 border-l-orange-500 border-spacing-3 border border-slate-500 bg-red-400"
+            class="drop-shadow-lg border-separate border-b-orange-500 border-t-orange-500 border-r-orange-500 border-l-orange-500 border-spacing-3 border-8 border-slate-500 bg-re-400"
           >
             <thead>
               <tr>
@@ -231,47 +213,67 @@
             </tbody>
           </table>
         </div>
-        
-        <form class="flex justify-center p-5">
-          <label for="account-number"></label>
-          <input
-            id="input-deposite"
-            placeholder="Déposer de l'argent"
-            class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
-            type="number"
-          />
-          <button
-            class="border bg-customGreen-green"
-            id="submit-number"
-            type="button"
-          >
-            déposer
-          </button>
-        </form>
-        <form class="flex justify-center p-5">
-          <label for="account-number"></label>
-          <input
-            id="input-withdraw"
-            placeholder="Retirer de l'argent"
-            class="border-2 border-customYellow-yellowlight bg-customElectric-electric mr-2"
-            type="number"
-          />
-          <button
-            class="border bg-customGreen-green"
-            id="submit-number2"
-            type="button"
-          >
-            Retirer
-          </button>
-        </form>
-        <p class="flex justify-center text-customBlue-blue"> <b>Votre Solde est : </b>
-          <span id="solde"></span>
-        </p>
       </div>
+      
+
+      <div class="grid grid-cols-2 mt-20 lg:w-full">
+
+        <form class="flex justify-center p-5">
+          <label for="account-number"></label>
+          <input
+          id="input-deposite"
+          placeholder="Déposer de l'argent"
+          class="border-2 border-customYellow-yellowlight bg-gray-50 mr-2"
+          type="number"
+          />
+          <button
+          class="border bg-customGreenNormal-greennormal"
+          id="submit-number"
+          type="button"
+          >
+          déposer
+        </button>
+      </form>
+      <form class="flex justify-center p-5">
+        <label for="account-number"></label>
+        <input
+        id="input-withdraw"
+        placeholder="Retirer de l'argent"
+        class="border-2 border-customYellow-yellowlight bg-gray-50 mr-2"
+        type="number"
+        />
+        <button
+        class="border bg-red-500"
+        id="submit-number2"
+        type="button"
+        >
+        Retirer
+        </button>
+      </form>
+    </div>
     </section>
     <!------------------------------------- parti 2 --------------------------------------------->
     <section>
-    
+      <div class="flex flex-col justify-center font-bold mt-5 ">
+        <h2 class="border-4 grid grid-cols1 bg-customElectric-electric">Veuillez Ajouter un bénéficiaire :</h2>
+        <span class="space-y-4 ">
+          <input id="input-beneficiaire"
+          type="text"
+          placeholder="Nom du beneficiare"
+          class=""
+          >
+          <input id="input-numero de beneficiare"
+          type="number"
+          placeholder="Numéro de compte"
+          class="flex justify-end"
+          >
+          <input id="input-solde-beneficiare"
+          placeholder="Solde"
+          type="number"
+          class="flex justify-end">
+          <button id="button-valider2" class=" font-bold">Valider</button>
+        </div>
+        </span>
     </section>
 
     <!------------------------ footer ----------------------->
