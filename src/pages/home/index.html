@@ -21,7 +21,7 @@
   >
     <!--------------------------------- header ------------------------------------->
     <header
-      class="grid grid-cols-3 h-20 bg-customBlue-blue"
+      class="grid grid-cols-3 h-20 bg-orange-400"
       data-aos="fade-in"
       data-aos-offset="200"
       data-aos-delay="50"
@@ -41,64 +41,66 @@
         />
       </div>
       <h1
-        class="flex justify-center font-serif capitalize p-10 text-gray-900 text-2xl pt-5 font-bold"
+        class="flex justify-center font-serif capitalize  p-10 text-gray-900 text-2xl pt-5 font-bold"
       >
          Bienvenue chez MazeBank
       </h1>
       <div class="flex flex-row-reverse mt-2 m-2 pt-4 font-semibold" id="day-date"></div>
     </header>
-
+<!-- ----------------------- -->
     <section class="shadow-2xl">
       
-      <div class="grid grid-cols-2 mt-20 ">
-        <div class="flex flex-col justify-center mt-10 ">
+      <div class="grid grid-cols-6 mr-96 ">
+        <div class="flex flex-col justify-center mt-10 col-start-2">
 
-          <span class="justify-center border-x-4 border-x-gray-600 border-t-4 border-t-gray-600 border-b-4 border-b-gray-600 space-y-4">
+          <span class="justify-center border-x-4  border-x-orange-500 border-t-4 border-t-orange-500 border-b-4 border-b-orange-500 space-y-4 font-bold">
+            <div class="flex flex-col pt-4 ml-3 mr-3">
 
-            <input id="input-name"
-            placeholder="Votre nome et prenom"
-            type="text"
-            class="flex justify-end">
+              <input id="input-name"
+              placeholder="Votre nome et prenom"
+              type="text"
+            class="border-2 border-customYellow-yellowlight">
 
             <input id="input-compte"
             placeholder="Votre numero de compte"
             type="text"
-            class="flex justify-end">
+            class="border-2 border-customYellow-yellowlight my-4">
             
             <input id="input-iban"
             placeholder="Votre iban"
             type="text"
-            class="flex justify-end">
+            class="border-2 border-customYellow-yellowlight">
 
             <input id="input-banque"
             placeholder="Votre code banque"
             type="text"
-            class="flex justify-end">
+            class="border-2 border-customYellow-yellowlight my-4">
 
             <input id="input-guichet"
             placeholder="Votre code guichet"
             type="text"
-            class="flex justify-end">
-
+            class="border-2 border-customYellow-yellowlight">
+            
             <input id="input-rib"
             placeholder="Votre clé du RIB"
             type="text"
-            class="flex justify-end">
-
+            class="border-2 border-customYellow-yellowlight my-4">
+            
             <input id="input-bic"
             placeholder="Votre BIC"
             type="text"
-            class="flex justify-end">
-
+            class="border-2 border-customYellow-yellowlight">
+            
             <input id="input-solde"
             placeholder="Votre solde"
             type="text"
-            class="">
+            class="my-4 border-2 border-customYellow-yellowlight">
+          </div>
           </span>
-          <button id="button-valider1" class="flex justify-center font-bold">Valider</button>
+          <button id="button-valider1" class="flex justify-center font-bold pt-4">Valider</button>
         </div>
         <div
-          class="flex justify-center font-normal"
+        class="flex justify-center font-normal col-start-5 col-span-2 mt-10"
           data-aos="flip-right"
           data-aos-offset="200"
           data-aos-delay="50"
@@ -109,7 +111,7 @@
           data-aos-anchor-placement="top-center"
         >
           <table
-            class="drop-shadow-lg border-separate border-b-orange-500 border-t-orange-500 border-r-orange-500 border-l-orange-500 border-spacing-3 border-8 border-slate-500 bg-re-400"
+            class="drop-shadow-lg border-separate border-orange-500 border-spacing-3 border-8 border-slate-500"
           >
             <thead>
               <tr>
@@ -207,7 +209,7 @@
             <td
               class="border border-slate-700 ... bg-customElectric-electric"
             >
-              500£
+              1000£
             </td>
           </tr>
             </tbody>
@@ -216,9 +218,9 @@
       </div>
       
 
-      <div class="grid grid-cols-2 mt-20 lg:w-full">
+      <div class="grid grid-cols-2 mt-20 lg:w-full ">
 
-        <form class="flex justify-center p-5">
+        <form class="flex justify-center p-5 font-bold">
           <label for="account-number"></label>
           <input
           id="input-deposite"
@@ -234,7 +236,7 @@
           déposer
         </button>
       </form>
-      <form class="flex justify-center p-5">
+      <form class="flex justify-center p-5 font-bold">
         <label for="account-number"></label>
         <input
         id="input-withdraw"
@@ -253,34 +255,39 @@
     </div>
     </section>
     <!------------------------------------- parti 2 --------------------------------------------->
-    <section>
-      <div class="flex flex-col justify-center font-bold mt-5 ">
-        <h2 class="border-4 grid grid-cols1 bg-customElectric-electric">Veuillez Ajouter un bénéficiaire :</h2>
-        <span class="space-y-4 ">
+    <section class="flex justify-center">
+      
+      <div class="w-60 font-bold mt-3 ">
+        <h2 class="border-4  bg-customElectric-electric mb-2  border-customGreenNormal-greennormal" >Veuillez Ajouter un bénéficiaire :</h2>
+        <span class="space-y-4">
           <input id="input-beneficiaire"
           type="text"
           placeholder="Nom du beneficiare"
-          class=""
+          class="border-2 border-customYellow-yellowlight"
           >
           <input id="input-numero de beneficiare"
           type="number"
           placeholder="Numéro de compte"
-          class="flex justify-end"
+          class=" border-2 border-customYellow-yellowlight"
           >
           <input id="input-solde-beneficiare"
           placeholder="Solde"
           type="number"
-          class="flex justify-end">
-          <button id="button-valider2" class=" font-bold">Valider</button>
+          class="border-2 border-customYellow-yellowlight">
+          <button id="button-valider2" class="font-bold border-4   ">Valider</button>
         </div>
         </span>
     </section>
+    <div class="">
+      <select name="" id=""></select>
+    </div>
 
-    <!------------------------ footer ----------------------->
-    <!-- <footer class="w-full h-full bg-customBlue-blue blur-0">
-      <div>
+    <!-- ---------------------- footer ----------------------->
+    <footer class="w-full h-20 bg-orange-500 blur-0">
+      <div class="flex justify-center">
         <i class="fa-brands fa-github"></i>
       </div>
-    </footer> -->
+      
+    </footer>
   </body>
 </html>
