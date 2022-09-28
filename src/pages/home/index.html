@@ -10,7 +10,7 @@
   </head>
   <body
     class="font-thin bg-maze-bank h-screen bg-cover bg-center backdrop-blur-sm "
-    data-aos="fade-down-right"
+    data-aos="zoom-out-up"
     data-aos-offset="200"
     data-aos-delay="50"
     data-aos-duration="1000"
@@ -21,7 +21,7 @@
   >
     <!--------------------------------- header ------------------------------------->
     <header
-      class="grid grid-cols-3 h-20 bg-orange-400"
+      class="grid grid-cols-3 h-20 "
       data-aos="fade-in"
       data-aos-offset="200"
       data-aos-delay="50"
@@ -41,9 +41,10 @@
         />
       </div>
       <h1
-        class="flex justify-center font-serif capitalize  p-10 text-gray-900 text-2xl pt-5 font-bold"
+        class="flex justify-center font-serif  text-3xl md:text-4xl  uppercase  p-10 text-gray-900  pt-5 font-bold"
       >
-         Bienvenue chez MazeBank
+         Maze
+         <span class="text-red-700 pl-3">Bank</span>
       </h1>
       <div class="flex flex-row-reverse mt-2 m-2 pt-4 font-semibold" id="day-date"></div>
     </header>
@@ -116,24 +117,24 @@
             <thead>
               <tr>
                 <th
-                  class="border border-slate-600 ... bg-customElectric-electric"
+                  class="border border-slate-600 ... bg-orange-300"
                 >
                   Nome et Prénom
                 </th>
                 <th
-                  class="border border-slate-600 ... bg-customElectric-electric"
+                  class="border border-slate-600 ... bg-orange-300"
                 >
                   ABUBAKAR Safwan
                 </th>
               </tr>
               <tr>
                 <th
-                  class="border border-slate-600 ... bg-customElectric-electric"
+                  class="border border-slate-600 ... bg-orange-300"
                 >
                   Numero de compte
                 </th>
                 <th
-                  class="border border-slate-600 ... bg-customElectric-electric"
+                  class="border border-slate-600 ... bg-orange-300"
                 >
                   258698566912
                 </th>
@@ -142,48 +143,48 @@
             <tbody>
               <tr>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   Iban
                 </td>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   FR14 2004 1010 0505 0001 3M02 606
                 </td>
               </tr>
               <tr>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   Code banque
                 </td>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   86457
                 </td>
               </tr>
               <tr>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   Code guichet
                 </td>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   30546
                 </td>
               </tr>
               <tr>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   Clé du RIB
                 </td>
                 <td
-                  class="border border-slate-700 ... bg-customElectric-electric"
+                  class="border border-slate-700 ... bg-orange-300"
                 >
                   34
                 </td>
@@ -191,23 +192,23 @@
              
           </tr>
               <td
-              class="border border-slate-700 ... bg-customElectric-electric"
+              class="border border-slate-700 ... bg-orange-300"
             >
             BIC
             </td>
             <td
-              class="border border-slate-700 ... bg-customElectric-electric"
+              class="border border-slate-700 ... bg-orange-300"
             >
             P S S T F R P P L I L
             </td>
           </tr>
               <td
-              class="border border-slate-700 ... bg-customElectric-electric"
+              class="border border-slate-700 ... bg-orange-300"
             >
               Solde
             </td>
             <td
-              class="border border-slate-700 ... bg-customElectric-electric"
+              class="border border-slate-700 ... bg-orange-300"
             >
               1000£
             </td>
@@ -258,7 +259,7 @@
     <section class="flex justify-center">
       
       <div class="w-60 font-bold mt-3 ">
-        <h2 class="border-4  bg-customElectric-electric mb-2  border-customGreenNormal-greennormal" >Veuillez Ajouter un bénéficiaire :</h2>
+        <h2 class="border-4 border-customYellow-yellowlight  mb-2  bg-orange-300" >Veuillez Ajouter un bénéficiaire :</h2>
         <span class="space-y-4">
           <input id="input-beneficiaire"
           type="text"
@@ -274,17 +275,21 @@
           placeholder="Solde"
           type="number"
           class="border-2 border-customYellow-yellowlight">
-          <button id="button-valider2" class="font-bold border-4   ">Valider</button>
+          <button id="button-valider2" class="font-bold border-4">Valider</button>
+            <select class="" name="pets" id="pet-select">
+              <option value="">-- Choisis une option--</option>
+              <option value="dog"></option>
+              <option value="cat"></option>
+              <option value="hamster"></option>
+              <option value="parrot"></option>
+              <option value="spider"></option>
+              <option value="goldfish"></option>
         </div>
         </span>
-    </section>
-    <div class="">
-      <select name="" id=""></select>
-    </div>
 
     <!-- ---------------------- footer ----------------------->
     <footer class="w-full h-20 bg-orange-500 blur-0">
-      <div class="flex justify-center">
+      <div class="flex justify-center mt-2">
         <i class="fa-brands fa-github"></i>
       </div>
       
