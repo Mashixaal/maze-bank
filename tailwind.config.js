@@ -33,6 +33,7 @@ module.exports = {
       orange: colors.orange,
       lime: colors.lime,
       yellow:colors.yellow,
+      green:colors.green,
       
     },
     extend: {
