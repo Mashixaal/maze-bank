@@ -31,6 +31,8 @@ module.exports = {
       red: colors.red,
       gray: colors.gray,
       orange: colors.orange,
+      lime: colors.lime,
+      
     },
     extend: {
       backgroundImage: {
