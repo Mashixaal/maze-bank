@@ -98,7 +98,9 @@
             class="my-4 border-2 border-customYellow-yellowlight">
           </div>
           </span>
-          <button id="button-valider1" class="flex justify-center font-bold pt-4 text-lime-500">Valider</button>
+          <button id="button-valider1" class="flex justify-center font-bold pt-4 ">
+            <span class="border-4 border-yellow-500 bg-orange-400">Valider</span> 
+        </button>
         </div>
         <div
         class="flex justify-center font-normal col-start-5 col-span-2 mt-10"
@@ -274,7 +276,7 @@
           placeholder="Solde"
           type="number"
           class="border-2 border-customYellow-yellowlight">
-          <button id="button-valider2" class="font-bold border-4 my-4 block">Valider</button>
+          <button id="button-valider2" class="font-bold border-4 border-yellow-400 bg-orange-300 my-4 block">Valider</button>
             <select class="" name="pets" id="pet-select">
               <option value="">-- Choisis une option--</option>
               <option value="dog"></option>
@@ -283,20 +285,29 @@
               <option value="parrot"></option>
               <option value="spider"></option>
               <option value="goldfish"></option>
-           </select>
+            </select>
       </div>
     </section>
         <!-- ---------------------- footer ----------------------->
-        <footer class=" bg-orange-500 mt-2">
-          <div class="flex flex-col justify-center items-center h-full">
+        <footer class=" grid grid-cols-3 bg-orange-500 pr-28 mt-2 ">
+          <div class="pt-3">
+            <img
+              src="../../assets/img/logo-png.png"
+              alt="profil"
+              height="auto"
+              width="50px"
+              class="rounded-full ml-5"
+            />
+          </div>
+          <div class="flex flex-col justify-center items-center h-full ">
             <span class="italic font-bold">Copyright</span>
             <div class="pt-4 ">
                 <span>
                 <a href="https://www.linkedin.com/in/abubakar-safwan-376454250/" class="mr-2" target="_blank" rel="noreferrer noopener">
                   <i class="fa-brands fa-linkedin fa-beat text-customGreenNormal-greennormal"></i>
                 </a>
-                </span>
-
+              </span>
+              
                 <span class="space-4">
                 <a href="https://github.com/Mashixaal" class="" target="_blank" rel="noreferrer noopener">
                   <i class="fa-brands mr-3 fa-github fa-beat text-customGreenNormal-greennormal"></i>
@@ -310,15 +321,6 @@
                 </span>
             </div>
           </div>
-      <div class="">
-        <img
-          src="../../assets/img/logo-png.png"
-          alt="profil"
-          height="auto"
-          width="50px"
-          class="rounded-full ml-5 mt"
-        />
-      </div>
     </footer>
   </body>
 </html>
