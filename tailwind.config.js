@@ -37,7 +37,7 @@ module.exports = {
         'maze-bank': "url('../img/money.jpg')",
         'maze-bank2': "url('../img/maze-bank.jpg')",
         'money-body': "url('../img/money-body.jpg')",
-        'profile-body': "url('../img/bank-body.jpg')",
+        'bank-body': "url('../img/bank-body.jpg')",
         
       }
     },
