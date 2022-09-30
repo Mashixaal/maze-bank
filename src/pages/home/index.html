@@ -277,14 +277,22 @@
           type="number"
           class="border-2 border-customYellow-yellowlight pl-1">
           <button id="button-valider2" class="font-bold border-4 border-red-500 bg-orange-300 my-4 block px-2">Valider</button>
-            <select class="" name="pets" id="pet-select">
+            <select class="text-black rounded-lg h-max bg-red-200 border-4 border-double border-indigo-700" name="pets" id="pet-select">
               <option value="">-- Choisis une option--</option>
-              <option value="turc">Gorkem</option>
+              <optgroup label="men" class="text-blue-800">
+                <option value="">Gorkem</option>
+                <option value="">Emir</option>
+              </optgroup>
+              <optgroup label="food" class="text-blue-800">
+                <option value="gorkem">pomme de terre</option>
+                <option value="emir">Kebab</option>
+              </optgroup>
+              <!-- <option value="turc">Gorkem</option>
               <option value="turc">Emir</option>
               <option value="italien">Killein</option>
               <option value="food1">Kebab</option>
               <option value="food2">Pizza</option>
-              <option value="food3">cuscus</option>
+              <option value="food3">cuscus</option> -->
             </select>
       </div>
     </section>
