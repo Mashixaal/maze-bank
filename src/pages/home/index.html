@@ -9,7 +9,7 @@
     <!----------------------------- Branch dev---------------------------------------->
   </head>
   <body
-    class="font-thin bg-bank-body bg-cover bg-center backdrop-blur-sm"
+    class="font-thin bg-bank-body bg-cover bg-center backdrop-blur-sm "
     data-aos="zoom-out-up"
     data-aos-offset="200"
     data-aos-delay="50"
@@ -21,36 +21,50 @@
   >
     <!--------------------------------- header ------------------------------------->
     <header
-      class="grid grid-cols-3 h-20"
+      class="grid grid-cols-3 h-20 "
+      data-aos="fade-in"
+      data-aos-offset="200"
+      data-aos-delay="50"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
     >
       <div class="pl-3 mt-2">
         <img
           src="../../assets/img/logo-png.png"
           alt="profil"
           height="auto"
-          width="55px"
+          width="10%"
           class="rounded-full"
         />
       </div>
       <h1
-        class="flex justify-center font-serif  text-3xl md:text-4xl ml-10  uppercase  p-10 text-gray-900  pt-5 font-bold"
+        class="flex justify-center font-serif  text-3xl md:text-4xl  uppercase  p-10 text-gray-900  pt-5 font-bold"
       >
          Maze
          <span class="text-red-700 pl-3 -hue-rotate-15 invert">Bank</span>
       </h1>
-      <div class="lg:flex lg:flex-row-reverse lg:mt-2 lg:m-2 lg:pt-4 font-semibold" id="day-date"></div>
+      <div class="flex flex-row-reverse mt-2 m-2 pt-4 font-semibold" id="day-date"></div>
     </header>
 <!-- ----------------------- -->
-<h1 class="flex justify-center font-bold border-8 border-red-600 shadow-lg mb-4 py-2 backdrop-blur-xl text-sm uppercase font-serif bg-yellow-400/30 mt-10 hue-rotate-180 saturate-200">
-  Space Information</h1>
+<h1 class="flex justify-center font-bold border-8 border-red-600 shadow-lg mb-4 p-4 backdrop-blur-xl text-3xl uppercase font-serif bg-yellow-400/30 mt-10 hue-rotate-180 saturate-200">Space Information</h1>
 
-    <section class="shadow-sm">
+    <section class="shadow-2xl">
       
-      <div class="grid grid-cols-1 grid-rows-2" >
-        <div class="flex flex-row justify-center h-4/5 mt-10 mx-8 col-start-2 hue-rotate-180" 
-       >
+      <div class="grid grid-cols-6 mr-96 " >
+        <div class="flex flex-col justify-center mt-10 col-start-2 hue-rotate-180" 
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center">
 
-          <span class="flex justify-center border-x-4 border-red-500 border-t-4 border-t-orange-500 border-b-4 border-b-orange-500 space-y-4 font-bold backdrop-blur-xl bg-yellow-400/30">
+          <span class="flex justify-center border-x-4  border-red-500 border-t-4 border-t-orange-500 border-b-4 border-b-orange-500 space-y-4 font-bold backdrop-blur-xl bg-yellow-400/30">
             <div class="flex flex-col pt-4 ml-3 mr-3">
 
               <input id="input-name"
@@ -58,7 +72,7 @@
               type="text"
             class="border-2 border-customYellow-yellowlight pl-1">
 
-            <input id="input-compte "
+            <input id="input-compte"
             placeholder="Votre numero de compte"
             type="text"
             class="border-2 border-customYellow-yellowlight my-4 pl-1">
@@ -91,18 +105,23 @@
             <input id="input-solde"
             placeholder="Votre solde"
             type="text"
-            class="my-4 border-2  border-customYellow-yellowlight pl-1">
+            class="my-4 border-2 border-customYellow-yellowlight pl-1">
           </div>
           </span>
-          <div class="">
-            <button id="button-valider1" class="flex justify-center font-bold pt-4 ">
-              <span class="border-4 border-red-600 bg-orange-300 px-2 ">Valider</span> 
-            </button>
-          </div>
+          <button id="button-valider1" class="flex justify-center font-bold pt-4 ">
+            <span class="border-4 border-red-600 bg-orange-300 px-2 ">Valider</span> 
+        </button>
         </div>
         <div
-        class="flex justify-center font-normal col-start-4 col-span-2 mr-52 mt-10"
-        
+        class="flex justify-center font-normal col-start-5 col-span-2 mt-10"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
         >
           <table
             class="drop-shadow-lg border-separate border-red-500 border-spacing-3 border-8 border-slate-500 font-semibold hue-rotate-180 backdrop-blur-xl bg-yellow-400/30"
@@ -278,7 +297,12 @@
                 <option value="gorkem">pomme de terre</option>
                 <option value="emir">Kebab</option>
               </optgroup>
-             
+              <!-- <option value="turc">Gorkem</option>
+              <option value="turc">Emir</option>
+              <option value="italien">Killein</option>
+              <option value="food1">Kebab</option>
+              <option value="food2">Pizza</option>
+              <option value="food3">cuscus</option> -->
             </select>
       </div>
     </section>
